@@ -14,7 +14,7 @@ let switchOutput4 = "wear a warm coat, hat and gloves. Maybe a scarf too."
 
 let switchMessages = [switchOutput1, switchOutput2, switchOutput3, switchOutput4]
 
-switch(switchTemperature,switchState) {
+switch(switchTemperature && switchState) {
     case 1: (switchTemperature < 32 && switchState === 'NE')
         console.log(`${switchName}, ${switchMessages[0]}`);
         break;
