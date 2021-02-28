@@ -14,17 +14,17 @@ let switchOutput4 = "wear a warm coat, hat and gloves. Maybe a scarf too."
 
 let switchMessages = [switchOutput1, switchOutput2, switchOutput3, switchOutput4]
 
-switch (switchTemperature && switchState) {
+switch(switchTemperature + switchState) {
     case 1: (switchTemperature < 32 && switchState == 'NE')
         console.log(`${switchName}, ${switchMessages[0]}`)
         break;
-    case 2: ((switchTemperature > 32 || switchTemperature < 50) && switchState == 'NE')
+    case 2: ((switchTemperature > 32 && switchTemperature < 50) && switchState == 'NE')
         console.log(`${switchName}, ${switchMessages[1]}`)
         break;
-    case 3: ((switchTemperature > 32 || switchTemperature < 50) && switchState == 'FL')
+    case 3: ((switchTemperature > 32 && switchTemperature < 50) && switchState == 'FL')
         console.log(`${switchName}, ${switchMessages[2]}`)
         break;
-    case 4: ((switchTemperature > 50 || switchTemperature < 70) && switchState == 'FL')
+    case 4: ((switchTemperature > 50 && switchTemperature < 70) && switchState == 'FL')
         console.log(`${switchName}, ${switchMessages[3]}`)
         break;
 }
