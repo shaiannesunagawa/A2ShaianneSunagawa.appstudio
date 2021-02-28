@@ -30,8 +30,8 @@
           "!type": "External",
           "file": [
             "forms",
-            "Form1",
-            "Form1.json"
+            "switch",
+            "switch.json"
           ]
         }
       ],
