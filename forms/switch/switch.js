@@ -30,4 +30,7 @@ switch(true) {
     case (switchTemperature > 50 && switchTemperature < 70) && switchState == 'FL' :
         console.log(`${switchName}, ${switchMessages[3]}`);
         break;
+        
+    default:
+        console.log(`${switchName}, we have no advice for you.`)
 }
